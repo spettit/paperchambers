@@ -11,10 +11,10 @@ const Form = styled.form`
 
 const ContactForm = () => (
   <Form>
-    <input name="name" type="text" placeholder="Your Name" />
-    <input name="email" type="email" placeholder="Your email address" />
-    <textarea placeholder="Your Message" style={{height: '200px'}}/>
-    <button type="submit" style={{backgroundColor: 'darkgreen', color: 'white'}}>Send</button>
+    <input name="name" type="text" placeholder="Your Name" style={{fontSize: '16px', border: 'none'}}/>
+    <input name="email" type="email" placeholder="Your email address" style={{fontSize: '16px', border: 'none'}}/>
+    <textarea placeholder="Your Message" style={{height: '200px', fontSize: '16px', border: 'none'}}/>
+    <button type="submit" style={{backgroundColor: 'darkgreen', color: 'white', fontSize: '16px', border: 'none', marginTop: '10px'}}>Send</button>
   </Form>
 )
 

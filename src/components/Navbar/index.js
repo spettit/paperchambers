@@ -4,15 +4,12 @@ import styled from 'styled-components';
 import FaCameraRetro from 'react-icons/lib/fa/camera-retro';
 
 const Navstrip = styled.div`
-  ${'' /* background-color: black; */}
   margin-bottom: 1.45rem;
 `
 
 const NavContent = styled.div`
   margin: 0px auto;
-  ${'' /* max-width: 960px; */}
   padding: 1.45rem 1.0875rem;
-  ${'' /* background-color: darkblue; */}
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -20,7 +17,7 @@ const NavContent = styled.div`
 `
 
 const NavButtons = styled.div`
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     display: none;
   }
 `
@@ -38,7 +35,6 @@ const Navbar = () => (
           </h1>
           <NavButtons>
 
-            <FaCameraRetro style={{fontSize: '16px', color: 'Tomato', marginRight: '40px'}}/>
 
             <Link
               exact
@@ -47,6 +43,20 @@ const Navbar = () => (
               activeStyle={{color: 'black'}}
             >
               Home
+            </Link>
+            <Link
+              to="/about"
+              style={{color: 'gray', textDecoration: 'none', marginRight: '40px'}}
+              activeStyle={{color: 'black'}}
+            >
+              About
+            </Link>
+            <Link
+              to="/resources"
+              style={{color: 'gray', textDecoration: 'none', marginRight: '40px'}}
+              activeStyle={{color: 'black'}}
+            >
+              Resources
             </Link>
             <Link
               to="/contact"

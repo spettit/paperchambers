@@ -12,7 +12,7 @@ const Img = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: .5;
+  opacity: .7;
 `
 
 const Text = styled.h1`
