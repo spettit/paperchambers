@@ -5,8 +5,7 @@ import paper from '../../images/paper.jpg';
 
 const Jumbo = styled.div`
   height: 400px;
-  ${'' /* border-radius: 10px; */}
-  background-color: rebeccapurple;
+  background-color: black;
   position: relative;
 `
 
@@ -14,10 +13,12 @@ const Img = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: .7;
+  opacity: .5;
 `
 
 const Text = styled.h1`
+  font-size: 50px;
+  font-weight: lighter;
   width: 100%;
   text-align: center;
   color: white;

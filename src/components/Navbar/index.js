@@ -1,9 +1,10 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
+import FaCameraRetro from 'react-icons/lib/fa/camera-retro';
 
 const Navstrip = styled.div`
-  background-color: black;
+  ${'' /* background-color: black; */}
   margin-bottom: 1.45rem;
 `
 
@@ -11,7 +12,7 @@ const NavContent = styled.div`
   margin: 0px auto;
   ${'' /* max-width: 960px; */}
   padding: 1.45rem 1.0875rem;
-  background-color: darkblue;
+  ${'' /* background-color: darkblue; */}
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -30,27 +31,31 @@ const Navbar = () => (
           <h1 style={{ margin: 0 }}>
             <Link
               to="/"
-              style={{color: 'white', textDecoration: 'none'}}
+              style={{color: 'black', textDecoration: 'none', fontFamily: 'Courier'}}
             >
               Paper Chambers
             </Link>
           </h1>
           <NavButtons>
+
+            <FaCameraRetro style={{fontSize: '16px', color: 'Tomato', marginRight: '40px'}}/>
+
             <Link
               exact
               to="/"
               style={{color: 'gray', textDecoration: 'none', marginRight: '40px'}}
-              activeStyle={{color: 'white'}}
+              activeStyle={{color: 'black'}}
             >
               Home
             </Link>
             <Link
-              to="/page-2"
+              to="/contact"
               style={{color: 'gray', textDecoration: 'none'}}
-              activeStyle={{color: 'white'}}
+              activeStyle={{color: 'black'}}
             >
               Contact
             </Link>
+
           </NavButtons>
 
         </NavContent>
