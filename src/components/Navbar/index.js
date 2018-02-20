@@ -52,11 +52,11 @@ const Navbar = () => (
               About
             </Link>
             <Link
-              to="/resources"
+              to="/articles"
               style={{color: 'gray', textDecoration: 'none', marginRight: '40px'}}
               activeStyle={{color: 'black'}}
             >
-              Resources
+              Articles
             </Link>
             <Link
               to="/contact"
