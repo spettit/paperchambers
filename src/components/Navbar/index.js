@@ -30,7 +30,7 @@ const Navbar = () => (
               to="/"
               style={{color: 'black', textDecoration: 'none', fontFamily: 'Courier'}}
             >
-              Paper Chambers
+              Paper Buildings
             </Link>
           </h1>
           <NavButtons>
